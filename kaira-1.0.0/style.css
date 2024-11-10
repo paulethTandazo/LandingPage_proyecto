@@ -109,9 +109,20 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
+}
+#billboard h1 {
+  animation: fadeInUp 1s ease-out forwards;
+  font-family: Baloo Bhaijaan\ 2,sans-serif;
+  font-weight: 900;
 }
 
+
+#billboard h1 span{
+  font-size: 4rem;
+  text-align: center;
+  color: red;
+}
 h2,
 .h2 {
   font-size: 3.6rem;
