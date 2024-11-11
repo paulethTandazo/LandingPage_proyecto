@@ -113,7 +113,6 @@ h1,
 }
 #billboard h1 {
   animation: fadeInUp 1s ease-out forwards;
-  font-family: Baloo Bhaijaan\ 2,sans-serif;
   font-weight: 900;
 }
 /*Estilitos para los botones*/
@@ -153,7 +152,7 @@ h1,
 
 .blob-btn.one {
   background-color: #e63946; 
-  color: #fff; /* Texto blanco */
+  color: #fff; 
   border-color: #e63946; 
 }
 
@@ -218,7 +217,7 @@ h1,
 .features-section {
   background-color: #e66a6a;
   color: white;
-  padding: 8rem 0 4rem; /* Mayor espacio superior */
+  padding: 8rem 0 4rem; 
   position: relative;
   overflow: hidden;
 }
@@ -252,9 +251,8 @@ h1,
 .section-title {
   font-size: 4.5rem;
   font-weight: bold;
-  font-family: Baloo Bhaijaan\ 2,sans-serif;
   margin-bottom: 1.5rem;
-  color: #ffffff; /* Color blanco para el título */
+  color: #ffffff; 
 }
 
 .section-description {
@@ -269,8 +267,6 @@ h1,
 
 .feature-title {
   font-size: 1.2rem;
-  font-family: Baloo Bhaijaan\ 2,sans-serif;
-
   font-weight: bold;
   margin-top: 1rem;
   color: #ffffff;
@@ -288,131 +284,114 @@ h1,
     max-width: 100%;
   }
 }
+/*Estilos para los servicios*/
+#services h2, #services p {
+  color: white;
+}
+#seguro-text, #transporte-text, #fotografia-text, #traductor-text {
+  color: black !important;
+}
+
 
 /*Estilos para los card cointer*/
 
-/* Estilos para el título */
-#prices .container .content .title, #prices .container .content .title1 {
-  color: red;
-  justify-content: center;
-  font-family: 'Covered By Your Grace', cursive;
-  font-size: 30px;
-}
-
-/* Estilos para el subtítulo */
-#prices .container .content .subHeader, #prices .container .content .subHeader span {
-  font-family: 'Fredoka', sans-serif;
-  font-size: 70px;
-  font-weight: 800;
-}
-
-/* Contenedor de tarjetas */
-#prices .container .card-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 30px;
-  width: 100%;
-}
-
-/* Responsivo: cambia a columna en pantallas pequeñas */
-@media (max-width: 868px) {
-  #prices .container .card-container {
-    flex-direction: column;
-  }
-}
-
-/* Estilos de la tarjeta */
-#prices .container .card-container .card {
-  border: 1px solid #e6e6e6;
-  border-radius: 9px;
-  margin: 40px 25px;
-  width: 100%;
-}
-
-/* Responsivo: bordes y ancho de tarjeta */
-@media (max-width: 868px) {
-  #prices .container .card-container .card {
-    border: 3px solid #e6e6e6;
-    width: 90%;
-  }
-}
-
-/* Contenedor de cada celda dentro de la tarjeta */
-#prices .container .card-container .card .cell {
-  border-bottom: 1px solid #e6e6e6;
-  padding: 50px;
-  width: 100%;
-}
-
-/* Responsivo: bordes de celda */
-@media (max-width: 868px) {
-  #prices .container .card-container .card .cell {
-    border-bottom: 2px solid #e6e6e6;
-  }
-}
-
-/* Imagen dentro de la tarjeta */
-#prices .container .card-container img {
-  background-color: #fff;
-  height: 150px;
-  margin-top: -100px;
-  width: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px; /* Restauré el borde */
-}
-
-/* Estilos para el encabezado h2 */
-#prices .container .card-container .card .cell h2 {
-  color: #181818;
-  font-family: 'Covered By Your Grace', cursive;
-  font-size: 30px;
-  font-weight: 400;
-}
-
-/* Estilos para el texto en span dentro de h2 */
-#prices .container .card-container .card .cell h2 span {
-  color: red;
-  font-size: 20px;
-}
-
-/* Estilos para los párrafos */
-#prices .container .card-container .card .cell p {
-  color: #888;
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-/* Estilos para el precio */
-#prices .container .card-container .card .cell .price {
-  color: #181818;
-  font-family: 'Fredoka', sans-serif;
-  font-size: 40px;
-  font-weight:600;
-}
-/* para centrar la seccion new arrivals*/
-#prices .container .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-#prices .container .content .subHeader span {
-  color: red;
-}
-#prices .container .content .title {
+#new-arrival .title {
   font-size: 24px;
+  color: #333;
 }
-#prices {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+
+#new-arrival .subHeader {
+  font-size: 44px;
+  color: #555;
+  font-weight: bold;
 }
+
+#new-arrival .subHeader span {
+  color: #d9534f; 
+}
+
+#new-arrival .card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+#new-arrival .card:hover {
+  transform: translateY(-5px); 
+}
+
+#new-arrival .card h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+#new-arrival .card h2 span {
+  font-size: 15px;
+  color: #DAA520; /* Color dorado */
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(90deg, #DAA520, #FFD700, #DAA520);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#new-arrival .price {
+  font-size: 24px;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+#new-arrival .btn {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e66a6a;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+#new-arrival .btn:hover {
+  background-color: #c12e2a;
+}
+
+#new-arrival .text-muted {
+  color: #363535 !important;
+}
+
+#new-arrival img {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #new-arrival .title {
+    font-size: 28px;
+  }
+  #new-arrival .subHeader {
+    font-size: 20px;
+  }
+  #new-arrival .card h2 {
+    font-size: 22px;
+  }
+  #new-arrival .price {
+    font-size: 20px;
+  }
+}
+
+
 /* comentarios*/
 #testimonials .testimonial-card {
   background-color: #ffffff;
@@ -445,7 +424,6 @@ h1,
 }
 
 #contact h2 {
-  font-family: 'Baloo Bhaijaan 2', sans-serif; /* Aplica la fuente personalizada al título */
   color: #333;
 }
 
@@ -493,19 +471,39 @@ footer .btn-outline-danger:hover {
   border-color: red;
 }
 /*estilos para el contador*/
+
 #stats {
-  background-color: #f9f9f9;
+  background-color: #f8ebeb; /* Color de fondo como el de la imagen */
 }
 
-#stats h3 {
-  color: #000000;
+#stats h2 {
+  color: #ff0000; 
+  font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
+  animation: shimmer 2s infinite;
+  background: linear-gradient(90deg, #ff5252, #ff8a80, #ff5252);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#stats p {
-  font-size: 1.2em;
-  color: #333;
+#stats .counter {
+  font-size: 3rem;
+  color: #333; 
 }
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/*Estilos para los servicios extras*/
+#services {
+  background-color: #e45252; 
+}
+
 
 #billboard h1 span{
   font-size: 4rem;

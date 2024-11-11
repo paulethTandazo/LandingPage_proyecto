@@ -156,49 +156,6 @@
     </defs>
   </svg>
 
-  <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
-
-  <div class="search-popup">
-    <div class="search-popup-container">
-
-      <form role="search" method="get" class="form-group" action="">
-        <input type="search" id="search-form" class="form-control border-0 border-bottom"
-          placeholder="Type and press enter" value="" name="s" />
-        <button type="submit" class="search-submit border-0 position-absolute bg-white"
-          style="top: 15px;right: 15px;"><svg class="search" width="24" height="24">
-            <use xlink:href="#search"></use>
-          </svg></button>
-      </form>
-
-      <h5 class="cat-list-title">Browse Categories</h5>
-
-      <ul class="cat-list">
-        <li class="cat-list-item">
-          <a href="#" title="Jackets">Jackets</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="T-shirts">T-shirts</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Handbags">Handbags</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Accessories">Accessories</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Cosmetics">Cosmetics</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Dresses">Dresses</a>
-        </li>
-        <li class="cat-list-item">
-          <a href="#" title="Jumpsuits">Jumpsuits</a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-
   <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
     <div class="offcanvas-header justify-content-center">
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -405,162 +362,86 @@
       </div>
     </div>
   </section>
-  <section id="new-arrival">
-    <div id="prices" class="flex">
-      <div class="container" class="flex">
-        <div class="content">
-          <h1 class="title">OUR PRICES</h1>
-          <h3 class="subHeader">
-            The Best 
-            <span>Choice</span>
-          </h3>
+  <section id="new-arrival" class="py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title mb-1">OUR PRICES</h1>
+          <h3 class="subHeader mb-5">The Best <span>Choice</span></h3>
         </div>
-        <div class="card-container" class="flex">
-          <div class="card">
-            <div class="cell">
-              <img src="images/super-mario.png" height="500" width="500" alt="logo-super-mario">
-              <h2>
-                Solo Adventure 
-                <span>Affordable Price</span>
-              </h2>
-              <p>Per person</p>
-              <p class="price">$1.5K</p>
-              <h2>
-                <span>
-                </span>
-              </h2>
-            </div>
-            <div class="cell">
-              <p>With this solo plan, find adventures just for you. Click to start your unique journey.
-              </p>
-            </div>
-            <div class="cell">
-              <div class="buttons" class="flex">
-                <button class="blob-btn one">
-                  Book Now
-                  <span class="blob-btn__inner one"></span>
-                  <span class="after"></span>
-                </button>
-              </div>
-              <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 21 -7" result="goo"></feColorMatrix>
-                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </div>
+      </div>
+      <div class="row">
+        <!-- Plan Individual -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4 text-center">
+            <img src="images/ViajeroSolo.png" alt="logo-viajero" class="img-fluid mx-auto" style="height: 100px; width: auto;">
+            <h2 class="mt-4">Solo Adventure <span class="d-block text-muted">Affordable Price</span></h2>
+            <p class="price text-danger display-5 my-3">$1.5K</p>
+            <p>For individual travelers</p>
+            <p class="text-muted">With this solo plan, find adventures just for you join with us. Click to start your unique journey.</p>
+            <button class="btn btn-danger w-100">Book Now</button>
           </div>
-          <div class="card">
-            <div class="cell">
-              <img src="images/pinguino.png" alt="logo-pinguino">
-              <h2>
-                Romantic Getaway
-                <span>Best Seller</span>
-              </h2>
-              <p>Per person</p>
-              <p class="price">$2.5K</p>
-              <h2>
-                <span>
-                </span>
-              </h2>
-            </div>
-            <div class="cell">
-              <p>With this couple’s plan, discover shared adventures. Click to begin your romantic journey.
-              </p>
-            </div>
-            <div class="cell">
-              <div class="buttons" class="flex">
-                <button class="blob-btn one">
-                  Book Now
-                  <span class="blob-btn__inner one"></span>
-                  <span class="after"></span>
-                </button>
-              </div>
-              <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 21 -7" result="goo"></feColorMatrix>
-                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </div>
+        </div>
+        
+        <!-- Plan Pareja -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4 text-center">
+            <img src="images/pareja.png" alt="logo-pareja" class="img-fluid mx-auto" style="height: 100px; width: auto;">
+            <h2 class="mt-4">Romantic Getaway <span class="d-block text-muted">Best Seller</span></h2>
+            <p class="price text-danger display-5 my-3">$2.5K</p>
+            <p>For couples</p>
+            <p class="text-muted">With this couple’s plan, discover shared adventures. Click to begin your romantic journey.</p>
+            <button class="btn btn-danger w-100">Book Now</button>
           </div>
-          <div class="card">
-            <div class="cell">
-              <img src="images/pokemon.png" alt="logo-pokemon">
-              <h2>
-                Familiar Journey
-                <span>Most Popular</span>
-              </h2>
-              <p>Per person</p>
-              <p class="price">$5.5K</p>
-              <h2>
-                <span>
-                </span>
-              </h2>
-            </div>
-            <div class="cell">
-              <p>With this family plan, make memories together. Click to start your shared adventure.
-              </p>
-            </div>
-            <div class="cell">
-              <div class="buttons" class="flex">
-                <button class="blob-btn one">
-                  Book Now
-                  <span class="blob-btn__inner one"></span>
-                  <span class="after"></span>
-                </button>
-              </div>
-              <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                <defs>
-                  <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 21 -7" result="goo"></feColorMatrix>
-                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                  </filter>
-                </defs>
-              </svg>
-            </div>
+        </div>
+        
+        <!-- Plan Familiar -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4 text-center">
+            <img src="images/familia.png" alt="logo-familia" class="img-fluid mx-auto" style="height: 100px; width: auto;">
+            <h2 class="mt-4">Familiar Journey <span class="d-block text-muted">Most Popular</span></h2>
+            <p class="price text-danger display-5 my-3">$5.5K</p>
+            <p>For families</p>
+            <p class="text-muted">With this family plan, make memories together. Click to start your shared adventure.</p>
+            <button class="btn btn-danger w-100">Book Now</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="stats" class="py-5 bg-light">
+  
+  <section id="stats" class="py-5 bg-red">
     <div class="container">
-      <h2 class="text-center mb-5" style="color: #e57373;">Our Achievements</h2>
+      <h1 class="title mb-1 text-center" style="font-size: 15px;"> Our Achievements</h1>
+      <h2 class="text-center mb-5" style="color: #e57373;">We are the most recognized platform
+      </h2>
       <div class="row text-center">
         
         <!-- Contador de Visitas -->
         <div class="col-md-4 mb-4">
-          <h3 class="counter display-4" data-target="20000">0</h3>
-          <p>Clientes que visitaron nuestra página</p>
+          <h3 class="counter display-4" data-target="4000">0</h3>
+          <p>Clients Who Visited Our Page</p>
         </div>
         
         <!-- Contador de Clientes -->
         <div class="col-md-4 mb-4">
-          <h3 class="counter display-4" data-target="15000">0</h3>
-          <p>Clientes satisfechos</p>
+          <h3 class="counter display-4" data-target="2000">0</h3>
+          <p>Satisfied Clients</p>
         </div>
         
         <!-- Contador de Personas que Han Viajado -->
         <div class="col-md-4 mb-4">
-          <h3 class="counter display-4" data-target="5000">0</h3>
-          <p>Personas que viajaron con nosotros</p>
+          <h3 class="counter display-4" data-target="1500">0</h3>
+          <p>People Who Traveled With Us</p>
         </div>
         
       </div>
     </div>
   </section>
   
-  <section id="testimonials" class="py-5 bg-light">
+  <section id="testimonials" class="py-5 bg-white">
     <div class="container">
-      <h2 class="text-center mb-5">What Our Clients Say</h2>
+      <h2 class="text-center mb-5" style="font-size: 35px;">What Our Clients Say</h2>
       <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           
@@ -612,6 +493,7 @@
             </div>
           </div>
         </div>
+        
   
         <!-- Controles del carrusel -->
         <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
@@ -627,7 +509,7 @@
   </section>
   <section id="services" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4" style="font-family: 'Baloo Bhaijaan 2', sans-serif; color: #e57373;">Our Services</h2>
+      <h2 class="text-center mb-4">Our Services</h2>
       <p class="text-center mb-5">Explore what we offer to make your trip to Japan unforgettable!</p>
       
       <div class="row">
@@ -635,8 +517,9 @@
         <div class="col-md-6 mb-4">
           <div class="p-4 shadow-sm rounded bg-light text-center">
             <img src="images/safe-travel-icon.png" alt="Safe Travel" class="mb-3" style="width: 50px;">
-            <h5 class="font-weight-bold">Viaje Seguro</h5>
-            <p>Disfruta de un viaje seguro con seguros de viaje personalizados y guías experimentados.</p>
+            <h5 class="font-weight-bold">
+              Safe Travel</h5>
+            <p id="seguro-text">Mobility Anytime. We adapt to your schedule for greater convenience.</p>
           </div>
         </div>
         
@@ -644,8 +527,10 @@
         <div class="col-md-6 mb-4">
           <div class="p-4 shadow-sm rounded bg-light text-center">
             <img src="images/flexible-transport-icon.png" alt="Flexible Transport" class="mb-3" style="width: 50px;">
-            <h5 class="font-weight-bold">Traslados Flexibles</h5>
-            <p>Movilidad en cualquier momento. Nos adaptamos a tu horario para mayor comodidad.</p>
+            <h5 class="font-weight-bold">
+              Flexible Transfers</h5>
+            <p id="transporte-text">Mobility Anytime. We adapt to your schedule for added convenience.
+            </p>
           </div>
         </div>
         
@@ -653,8 +538,8 @@
         <div class="col-md-6 mb-4">
           <div class="p-4 shadow-sm rounded bg-light text-center">
             <img src="images/photo-service-icon.png" alt="Photo Service" class="mb-3" style="width: 50px;">
-            <h5 class="font-weight-bold">Servicio de Fotografía</h5>
-            <p>Lleva los mejores recuerdos a casa con nuestro servicio de fotos profesional.</p>
+            <h5 class="font-weight-bold">Photography Service</h5>
+            <p id="fotografia-text"> Take home the best memories with our professional photo service.</p>
           </div>
         </div>
         
@@ -662,8 +547,9 @@
         <div class="col-md-6 mb-4">
           <div class="p-4 shadow-sm rounded bg-light text-center">
             <img src="images/translator-icon.png" alt="Translator Service" class="mb-3" style="width: 50px;">
-            <h5 class="font-weight-bold">Traductor Personal</h5>
-            <p>Evita las barreras del idioma con un traductor personal para ayudarte en todo momento.</p>
+            <h5 class="font-weight-bold">Personal Translator</h5>
+            <p id="traductor-text">Overcome language barriers with a personal translator to assist you.
+            </p>
           </div>
         </div>
       </div>
@@ -756,7 +642,7 @@
       
       <!-- Footer Bottom -->
       <div class="text-center mt-4 text-muted">
-        <p>&copy; Meow Tokyo 2024 | Developed by PTANDAZO</p>
+        <p>&copy; Meow Tokyo 2024 | Developed by PaulethTandazo</p>
       </div>
     </div>
   </footer>
@@ -938,47 +824,56 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/**/
-document.addEventListener("DOMContentLoaded", function () {
-  const counters = document.querySelectorAll('.counter');
-  const speed = 200; // Ajusta la velocidad del conteo
+/*Javascript del contador*/
+// Función para abreviar números grandes
+function formatNumber(num) {
+  if (num >= 1000 && num < 1000000) {
+    return (num / 1000).toFixed(1) + 'K'; // 1.5K, 2.5K, etc.
+  } else if (num >= 1000000) {
+    return (num / 1000000).toFixed(1) + 'M'; // 1.5M, 2.5M, etc.
+  } else {
+    return num;
+  }
+}
 
-  // Función para iniciar el conteo
-  const startCounter = (counter) => {
-    const target = +counter.getAttribute('data-target');
-    let count = 0;
-
-    const increment = target / speed;
-
-    const updateCount = () => {
-      if (count < target) {
-        count += increment;
-        counter.innerText = Math.ceil(count);
-        requestAnimationFrame(updateCount); // Usa requestAnimationFrame para una animación suave
-      } else {
-        counter.innerText = target; // Asegurarse de que llega exactamente al target
-      }
-    };
-
-    updateCount();
+// Función para animar el contador
+function animateCounter(counter) {
+  const target = +counter.getAttribute('data-target');
+  let count = 0;
+  
+  const updateCounter = () => {
+    const increment = target / 200; // Ajusta la velocidad
+    if (count < target) {
+      count += increment;
+      counter.innerText = formatNumber(Math.ceil(count));
+      setTimeout(updateCounter, 20);
+    } else {
+      counter.innerText = formatNumber(target); // Asegura el valor final
+    }
   };
+  
+  updateCounter();
+}
 
-  // Configuración de IntersectionObserver
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        startCounter(entry.target);
-        observer.unobserve(entry.target); // Deja de observar el elemento una vez que ha iniciado el conteo
-      }
-    });
-  }, { threshold: 0.5 }); // El elemento debe estar al 50% visible para activar el contador
+// Configurar el IntersectionObserver para iniciar los contadores cuando son visibles
+const counters = document.querySelectorAll('.counter');
+const observerOptions = {
+  threshold: 0.5 // Inicia la animación cuando el 50% del elemento es visible
+};
 
-  counters.forEach(counter => {
-    observer.observe(counter);
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target); // Inicia el contador
+      observer.unobserve(entry.target); // Deja de observar para evitar reiniciar el contador
+    }
   });
+}, observerOptions);
+
+// Añadir cada contador al observer
+counters.forEach(counter => {
+  observer.observe(counter);
 });
-
-
 
   </script>  
 </body>
