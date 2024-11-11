@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Japan-Travel</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="TemplatesJungle">
+  <meta name="keywords" content="ecommerce,fashion,store">
+  <meta name="description" content="Bootstrap 5 Fashion Store HTML CSS Template">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Marcellus&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="homepage">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="m14.478 1.5l.5-.033a.5.5 0 0 0-.871-.301l.371.334Zm-.498 2.959a.5.5 0 1 0-1 0h1Zm-6.49.082h-.5h.5Zm0 .959h.5h-.5Zm-6.99 7V12a.5.5 0 0 0-.278.916L.5 12.5Zm.998-11l.469-.175a.5.5 0 0 0-.916-.048l.447.223Zm3.994 9l.354.353a.5.5 0 0 0-.195-.827l-.159.474Zm7.224-8.027l-.37.336l.18.199l.265-.04l-.075-.495Zm1.264-.94c.051.778.003 1.25-.123 1.606c-.122.345-.336.629-.723 1l.692.722c.438-.42.776-.832.974-1.388c.193-.546.232-1.178.177-2.006l-.998.066Zm0 3.654V4.46h-1v.728h1Zm-6.99-.646V5.5h1v-.959h-1Zm0 .959V6h1v-.5h-1ZM10.525 1a3.539 3.539 0 0 0-3.537 3.541h1A2.539 2.539 0 0 1 10.526 2V1Zm2.454 4.187C12.98 9.503 9.487 13 5.18 13v1c4.86 0 8.8-3.946 8.8-8.813h-1ZM1.03 1.675C1.574 3.127 3.614 6 7.49 6V5C4.174 5 2.421 2.54 1.966 1.325l-.937.35Zm.021-.398C.004 3.373-.157 5.407.604 7.139c.759 1.727 2.392 3.055 4.73 3.835l.317-.948c-2.155-.72-3.518-1.892-4.132-3.29c-.612-1.393-.523-3.11.427-5.013l-.895-.446Zm4.087 8.87C4.536 10.75 2.726 12 .5 12v1c2.566 0 4.617-1.416 5.346-2.147l-.708-.706Zm7.949-8.009A3.445 3.445 0 0 0 10.526 1v1c.721 0 1.37.311 1.82.809l.74-.671Zm-.296.83a3.513 3.513 0 0 0 2.06-1.134l-.744-.668a2.514 2.514 0 0 1-1.466.813l.15.989ZM.222 12.916C1.863 14.01 3.583 14 5.18 14v-1c-1.63 0-3.048-.011-4.402-.916l-.556.832Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="pinterest" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor"
+          d="m4.5 13.5l3-7m-3.236 3a2.989 2.989 0 0 1-.764-2V7A3.5 3.5 0 0 1 7 3.5h1A3.5 3.5 0 0 1 11.5 7v.5a3 3 0 0 1-3 3a2.081 2.081 0 0 1-1.974-1.423L6.5 9m1 5.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="m1.61 12.738l-.104.489l.105-.489Zm11.78 0l.104.489l-.105-.489Zm0-10.476l.104-.489l-.105.489Zm-11.78 0l.106.489l-.105-.489ZM6.5 5.5l.277-.416A.5.5 0 0 0 6 5.5h.5Zm0 4H6a.5.5 0 0 0 .777.416L6.5 9.5Zm3-2l.277.416a.5.5 0 0 0 0-.832L9.5 7.5ZM0 3.636v7.728h1V3.636H0Zm15 7.728V3.636h-1v7.728h1ZM1.506 13.227c3.951.847 8.037.847 11.988 0l-.21-.978a27.605 27.605 0 0 1-11.568 0l-.21.978ZM13.494 1.773a28.606 28.606 0 0 0-11.988 0l.21.978a27.607 27.607 0 0 1 11.568 0l.21-.978ZM15 3.636c0-.898-.628-1.675-1.506-1.863l-.21.978c.418.09.716.458.716.885h1Zm-1 7.728a.905.905 0 0 1-.716.885l.21.978A1.905 1.905 0 0 0 15 11.364h-1Zm-14 0c0 .898.628 1.675 1.506 1.863l.21-.978A.905.905 0 0 1 1 11.364H0Zm1-7.728c0-.427.298-.796.716-.885l-.21-.978A1.905 1.905 0 0 0 0 3.636h1ZM6 5.5v4h1v-4H6Zm.777 4.416l3-2l-.554-.832l-3 2l.554.832Zm3-2.832l-3-2l-.554.832l3 2l.554-.832Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="dribble" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          d="M4.839 1.024c3.346 4.041 5.096 7.922 5.704 12.782M.533 6.82c5.985-.138 9.402-1.083 11.97-4.216M2.7 12.594c3.221-4.902 7.171-5.65 11.755-4.293M14.5 7.5a7 7 0 1 0-14 0a7 7 0 0 0 14 0Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <rect width="20" height="18" x="2" y="4" rx="4" />
+          <path d="M8 2v4m8-4v4M2 10h20" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="shopping-bag" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path
+            d="M3.977 9.84A2 2 0 0 1 5.971 8h12.058a2 2 0 0 1 1.994 1.84l.803 10A2 2 0 0 1 18.833 22H5.167a2 2 0 0 1-1.993-2.16l.803-10Z" />
+          <path d="M16 11V6a4 4 0 0 0-4-4v0a4 4 0 0 0-4 4v5" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="gift" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <rect width="18" height="14" x="3" y="8" rx="2" />
+          <path d="M12 5a3 3 0 1 0-3 3m6 0a3 3 0 1 0-3-3m0 0v17m9-7H3" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-cycle" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path
+            d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.806 2C16.209 2 19.76 4.335 21 8" />
+          <path d="m7 17l-4-1l-1 4M17 7l4 1l1-4" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M17 11H9.41l3.3-3.29a1 1 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33a1 1 0 0 0 0 .76a1 1 0 0 0 .21.33l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L9.41 13H17a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
+        <g fill="none" fill-rule="evenodd">
+          <path
+            d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+          <path fill="currentColor"
+            d="M5.669 4.76a1.469 1.469 0 0 1 2.04-1.177c1.062.454 3.442 1.533 6.462 3.276c3.021 1.744 5.146 3.267 6.069 3.958c.788.591.79 1.763.001 2.356c-.914.687-3.013 2.19-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28c-.906.387-1.92-.2-2.038-1.177c-.138-1.142-.396-3.735-.396-7.237c0-3.5.257-6.092.396-7.235Z" />
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
+        <path fill="currentColor"
+          d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+    <div class="offcanvas-header justify-content-center">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Growers cider</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Fresh grapes</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Heinz tomato ketchup</h6>
+              <small class="text-body-secondary">Brief description</small>
+            </div>
+            <span class="text-body-secondary">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center w-100">
+        <div class="col-auto">
+          <a class="navbar-brand text-white" href="index.html">
+            <img src="images/Logotipo.png" alt="Logo" width="200" height="35">
+          </a>
+        </div>
+  
+        <div class="col-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-3 col-lg-auto">
+          <ul class="list-unstyled d-flex m-0">
+            <li>
+              <a href="index.html" class="text-uppercase mx-3">Favoritos <span class="wishlist-count">(0)</span></a>
+            </li>
+            <li>
+              <a href="index.html" class="text-uppercase mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                aria-controls="offcanvasCart">Cart <span class="cart-count">(0)</span></a>
+            </li>
+            <li>
+              <a href="#search" class="search-button mx-2">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section id="billboard">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Columna de Texto a la Izquierda -->
+        <div class="col-md-6" data-aos="fade-in">
+          <h1 style="text-align: center;" data-aos="fade-in">
+            Discover the magical 
+            <span style="color: #e63946;">Japan</span> 
+          </h1>
+          <p class="text-start">
+            Explore the beauty and richness of Japanese culture, from traditional kimonos to modern
+            aesthetics. Embark on a journey of discovery through our latest collection inspired by Japan.
+          </p>
+  
+          <!-- Contenedor de Botones -->
+          <div class="button-contact-container d-flex flex-column align-items-center">
+            <div class="buttons" style="display: flex; gap: 10px;">
+              <!-- Botón Contact Us -->
+              <button class="blob-btn three">
+                <a class="contactUsText" href="#contact">CONTACT US</a>
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+              <!-- Botón Make a Booking -->
+              <button  id="blobBookingBtn" class="blob-btn one">
+                MAKE A BOOKING
+                <span class="blob-btn__inner one">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+  
+          <!-- Información de Contacto -->
+          <div class="contact-info d-flex justify-content-center gap-3 mt-3">
+            <p class="phone">
+              <i class="fas fa-phone-alt"></i>
+              Phone: +1 234 567 890
+            </p>
+            <p class="email">
+              <i class="fas fa-envelope"></i> 
+              Email: travelJapan@gmail.com
+            </p>
+          </div>
+        </div>
+  
+        <!-- Columna de Imagen a la Derecha -->
+        <div class="col-md-6 text-center" data-aos="fade-in" data-aos-delay="300">
+          <img src="images/GatitoLading.png" alt="Gatito-Landing" class="img-fluid">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="why-choose-us" class="features-section py-5">
+    <div class="wave-container">
+      <img class="waves" src="images/waves.4484f28ef98e2546b0971c78cb961658.svg" alt="waves">
+    </div>
+    <div class="container text-center">
+      <h2 class="section-title mb-4">Why Choose This Destination?</h2>
+      <div class="row justify-content-center gap-1"> 
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="0">
+          <div class="feature-item">
+            <img src="images/montana.png" height="100" width="100">
+            <h4 class="feature-title mt-3">Distinctive Destinations</h4>
+            <p class="feature-description">Explore the various places Japan has to offer.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="300">
+          <div class="feature-item">
+            <img src="images/ramen.png" height="100" width="100">
+            <h4 class="feature-title mt-3">Unique Gastronomy</h4>
+            <p class="feature-description">Enjoy the incredible Japanese cuisine.</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-center" data-aos="fade-in" data-aos-delay="600">
+          <div class="feature-item">
+            <img src="images/japon.png" height="100" width="100">
+            <h4 class="feature-title mt-3">Historical Culture</h4>
+            <p class="feature-description">Immerse yourself in the rich Japanese culture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="new-arrival" class="py-5">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title mb-1">OUR PRICES</h1>
+          <h3 class="subHeader mb-5">The Best <span>Choice</span></h3>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Plan Individual -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4 text-center">
+            <img src="images/ViajeroSolo.png" alt="logo-viajero" class="img-fluid mx-auto" style="height: 100px; width: auto;">
+            <h2 class="mt-4">Solo Adventure <span class="d-block text-muted">Affordable Price</span></h2>
+            <p class="price text-danger display-5 my-3">$1.5K</p>
+            <p>For individual travelers</p>
+            <p class="text-muted">With this solo plan, find adventures just for you join with us. Click to start your unique journey.</p>
+            <button class="btn btn-danger w-100">Book Now</button>
+          </div>
+        </div>
+        
+        <!-- Plan Pareja -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4 text-center">
+            <img src="images/pareja.png" alt="logo-pareja" class="img-fluid mx-auto" style="height: 100px; width: auto;">
+            <h2 class="mt-4">Romantic Getaway <span class="d-block text-muted">Best Seller</span></h2>
+            <p class="price text-danger display-5 my-3">$2.5K</p>
+            <p>For couples</p>
+            <p class="text-muted">With this couple’s plan, discover shared adventures. Click to begin your romantic journey.</p>
+            <button class="btn btn-danger w-100">Book Now</button>
+          </div>
+        </div>
+        
+        <!-- Plan Familiar -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm p-4 text-center">
+            <img src="images/familia.png" alt="logo-familia" class="img-fluid mx-auto" style="height: 100px; width: auto;">
+            <h2 class="mt-4">Familiar Journey <span class="d-block text-muted">Most Popular</span></h2>
+            <p class="price text-danger display-5 my-3">$5.5K</p>
+            <p>For families</p>
+            <p class="text-muted">With this family plan, make memories together. Click to start your shared adventure.</p>
+            <button class="btn btn-danger w-100">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="stats" class="py-5 bg-red">
+    <div class="container">
+      <h1 class="title mb-1 text-center" style="font-size: 15px;"> Our Achievements</h1>
+      <h2 class="text-center mb-5" style="color: #e57373;">We are the most recognized platform
+      </h2>
+      <div class="row text-center">
+        
+        <!-- Contador de Visitas -->
+        <div class="col-md-4 mb-4">
+          <h3 class="counter display-4" data-target="4000">0</h3>
+          <p>Clients Who Visited Our Page</p>
+        </div>
+        
+        <!-- Contador de Clientes -->
+        <div class="col-md-4 mb-4">
+          <h3 class="counter display-4" data-target="2000">0</h3>
+          <p>Satisfied Clients</p>
+        </div>
+        
+        <!-- Contador de Personas que Han Viajado -->
+        <div class="col-md-4 mb-4">
+          <h3 class="counter display-4" data-target="1500">0</h3>
+          <p>People Who Traveled With Us</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="testimonials" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-size: 35px;">What Our Clients Say</h2>
+      <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <!-- Testimonio 1 -->
+          <div class="carousel-item active">
+            <div class="testimonial-card mx-auto p-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="images/DomenicaFoto.png" alt="Client 1" class="client-img rounded-circle me-3">
+                <div>
+                  <h5 class="mb-0">Domenica Moran</h5>
+                  <div class="stars">
+                    ★★★★☆
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-text">"I had an amazing experience! The service was fantastic, and I can't wait to book my next trip."</p>
+            </div>
+          </div>
+  
+          <!-- Testimonio 2 -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto p-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="images/NadiaFoto.png" alt="Client 2" class="client-img rounded-circle me-3">
+                <div>
+                  <h5 class="mb-0">Nadia Cárdenas</h5>
+                  <div class="stars">
+                    ★★★★★
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-text">"The entire journey was seamless and enjoyable. Highly recommend this service!"</p>
+            </div>
+          </div>
+  
+          <!-- Testimonio 3 -->
+          <div class="carousel-item">
+            <div class="testimonial-card mx-auto p-4">
+              <div class="d-flex align-items-center mb-3">
+                <img src="images/melanieFptp.png" alt="Client 3" class="client-img rounded-circle me-3">
+                <div>
+                  <h5 class="mb-0">Melanie Briones</h5>
+                  <div class="stars">
+                    ★★★★☆
+                  </div>
+                </div>
+              </div>
+              <p class="testimonial-text">"Incredible service, friendly staff, and great value for money. I'll definitely be back!"</p>
+            </div>
+          </div>
+        </div>
+        
+  
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <p class="text-center mb-5">Explore what we offer to make your trip to Japan unforgettable!</p>
+      
+      <div class="row">
+        <!-- Viaje Seguro -->
+        <div class="col-md-6 mb-4">
+          <div class="p-4 shadow-sm rounded bg-light text-center">
+            <img src="images/safe-travel-icon.png" alt="Safe Travel" class="mb-3" style="width: 50px;">
+            <h5 class="font-weight-bold">
+              Safe Travel</h5>
+            <p id="seguro-text">Mobility Anytime. We adapt to your schedule for greater convenience.</p>
+          </div>
+        </div>
+        
+        <!-- Traslados Flexibles -->
+        <div class="col-md-6 mb-4">
+          <div class="p-4 shadow-sm rounded bg-light text-center">
+            <img src="images/flexible-transport-icon.png" alt="Flexible Transport" class="mb-3" style="width: 50px;">
+            <h5 class="font-weight-bold">
+              Flexible Transfers</h5>
+            <p id="transporte-text">Mobility Anytime. We adapt to your schedule for added convenience.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Servicio de Fotografía -->
+        <div class="col-md-6 mb-4">
+          <div class="p-4 shadow-sm rounded bg-light text-center">
+            <img src="images/photo-service-icon.png" alt="Photo Service" class="mb-3" style="width: 50px;">
+            <h5 class="font-weight-bold">Photography Service</h5>
+            <p id="fotografia-text"> Take home the best memories with our professional photo service.</p>
+          </div>
+        </div>
+        
+        <!-- Traductor Personal -->
+        <div class="col-md-6 mb-4">
+          <div class="p-4 shadow-sm rounded bg-light text-center">
+            <img src="images/translator-icon.png" alt="Translator Service" class="mb-3" style="width: 50px;">
+            <h5 class="font-weight-bold">Personal Translator</h5>
+            <p id="traductor-text">Overcome language barriers with a personal translator to assist you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="py-5" style="background-color: white;">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact With Team</h2>
+      <p class="text-center mb-5">We'd love to hear from you! Fill out the form below to get in touch.</p>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form class="p-4 rounded shadow" style="background-color: #ffd5d5;">
+            <div class="row mb-3">
+              <div class="col">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="col">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <div class="col">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="col">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
+            </div>
+            
+            <div class="text-center">
+              <button type="submit" class="btn text-white px-5" style="background-color: red; border-color: red;">SEND MESSAGE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="py-5 bg-white">
+    <div class="container">
+      <div class="row text-center">
+        
+        <div class="col-md-4 mb-4">
+          <div class="icon">
+            <i class="fas fa-comments text-danger fa-2x"></i>
+          </div>
+          <h5 class="mt-3 text-dark">CONTACT</h5>
+          <button id="footerBookingBtn" class="btn btn-outline-danger">MAKE A BOOKING</button>
+          <p class="mt-2 text-muted">+0403-533-209</p>
+          <p class="text-muted">traveljapan@gmail.com</p>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt text-danger fa-2x"></i>
+          </div>
+          <h5 class="mt-3 text-dark">ADDRESS</h5>
+          <p class="text-muted">Tokyo, Japan</p>
+          <div class="social-icons">
+            <a href="#" class="text-danger mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-danger mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-danger mx-2"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <!-- Work Hours Section -->
+        <div class="col-md-4 mb-4">
+          <div class="icon">
+            <i class="fas fa-envelope text-danger fa-2x"></i>
+          </div>
+          <h5 class="mt-3 text-dark">WORK HOURS</h5>
+          <p class="text-muted">Mon: 8:00AM-8:00PM</p>
+          <p class="text-muted">Tue-Thur: 4:00PM-8:00PM</p>
+          <p class="text-muted">Fri: 8:00AM-8:00PM</p>
+        </div>
+        
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="text-center mt-4 text-muted">
+        <p>&copy; Meow Tokyo 2024 | Developed by PaulethTandazo</p>
+      </div>
+    </div>
+  </footer>
+<!-- Contenedor del Formulario de Reserva (Oculto inicialmente) -->
+<div id="bookingContainer" class="py-5 d-none">
+  <div class="container d-flex justify-content-center">
+    <form id="bookingForm" class="p-4 rounded shadow bg-light text-center" style="max-width: 600px;">
+      
+      <!-- Título centrado -->
+      <h2 class="mb-4" style="color: #e57373;">Book a Trip</h2>
+      
+      <!-- Información Personal -->
+      <div class="row mb-3">
+        <h5 class="mt-4" style="color: #e57373;">Personal Information:</h5>
+        <div class="col-12 col-md-6">
+          
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control text-center" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control text-center" id="email" placeholder="Enter your email" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-12 col-md-6">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" class="form-control text-center" id="address" placeholder="Enter your address" required>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="tel" class="form-control text-center" id="phone" placeholder="Enter your phone number" required>
+        </div>
+      </div>
+
+      <!-- Selección de Fechas -->
+      <h5 class="mt-4" style="color: #e57373;">Trip Dates:</h5>
+      <div class="row mb-3">
+        <div class="col-12 col-md-6">
+          <label for="departureDate" class="form-label">Departure Date</label>
+          <input type="date" class="form-control text-center" id="departureDate" required>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="returnDate" class="form-label">Return Date</label>
+          <input type="date" class="form-control text-center" id="returnDate" required>
+        </div>
+      </div>
+
+      <!-- Número de Personas -->
+      <div class="mb-3">
+        <label for="numPersons" class="form-label">Number of People</label>
+        <input type="number" class="form-control text-center" id="numPersons" min="1" placeholder="Enter number of people" required>
+      </div>
+
+      <!-- Selección de Planes -->
+      <h5 class="mt-4" style="color: #e57373;">Choose a Plan:</h5>
+      <div class="d-flex flex-column align-items-center mb-3">
+        <div class="form-check">
+          <input class="form-check-input plan" type="radio" name="plan" id="individualPlan" value="1500" required>
+          <label class="form-check-label" for="individualPlan">Individual ($1500)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input plan" type="radio" name="plan" id="couplePlan" value="2500">
+          <label class="form-check-label" for="couplePlan">Couple ($2500)</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input plan" type="radio" name="plan" id="familyPlan" value="3500">
+          <label class="form-check-label" for="familyPlan">Family ($3500)</label>
+        </div>
+      </div>
+
+      <!-- Servicios Adicionales -->
+      <h5 class="mt-4" style="color: #e57373;">Additional Services (Optional):</h5>
+      <div class="d-flex flex-column align-items-center">
+        <div class="form-check mb-3">
+          <input class="form-check-input additional-service" type="checkbox" value="200" id="luggage">
+          <label class="form-check-label" for="luggage">Include Luggage ($200)</label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input additional-service" type="checkbox" value="150" id="hotelTransport">
+          <label class="form-check-label" for="hotelTransport">Hotel Transport ($150)</label>
+        </div>
+      </div>
+
+      <!-- Total Cost -->
+      <div class="mt-4 mb-3">
+        <h5>Total Cost: <span id="totalCost">$0</span></h5>
+      </div>
+
+      <!-- Preferencias -->
+      <div class="mb-3">
+        <label for="preferences" class="form-label">Additional Preferences:</label>
+        <textarea class="form-control text-center" id="preferences" rows="3" placeholder="Enter any additional information or preferences"></textarea>
+      </div>
+
+      <!-- Botón de Envío -->
+      <div class="text-center">
+        <button type="submit" class="btn text-white px-5" id="submitBooking" style="background-color: #e57373; border-color: #e57373;" disabled>SUBMIT BOOKING</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/SmoothScroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const footerBookingBtn = document.getElementById("footerBookingBtn");
+  const blobBookingBtn = document.getElementById("blobBookingBtn");
+  const bookingContainer = document.getElementById("bookingContainer");
+  const totalCostDisplay = document.getElementById("totalCost");
+  const submitButton = document.getElementById("submitBooking");
+  const planRadios = document.querySelectorAll(".plan");
+  const serviceCheckboxes = document.querySelectorAll(".additional-service");
+
+  // Función para mostrar solo el formulario de reserva
+  function showBookingForm() {
+    // Ocultar el contenido principal y mostrar solo el formulario
+    document.body.childNodes.forEach((node) => {
+      if (node.nodeType === 1 && node !== bookingContainer && node !== footerBookingBtn && node !== blobBookingBtn) {
+        node.style.display = "none";
+      }
+    });
+    bookingContainer.classList.remove("d-none");
+  }
+
+  // Añadir eventos de clic a ambos botones
+  footerBookingBtn.addEventListener("click", showBookingForm);
+  blobBookingBtn.addEventListener("click", showBookingForm);
+
+  // Calcular el total en función de la selección del plan y servicios adicionales
+  function calculateTotal() {
+    let total = 0;
+
+    // Agregar el costo del plan seleccionado
+    planRadios.forEach(radio => {
+      if (radio.checked) {
+        total += parseFloat(radio.value);
+      }
+    });
+
+    // Agregar el costo de los servicios adicionales seleccionados
+    serviceCheckboxes.forEach(checkbox => {
+      if (checkbox.checked) {
+        total += parseFloat(checkbox.value);
+      }
+    });
+
+    // Actualizar el total en la pantalla
+    totalCostDisplay.textContent = `$${total.toFixed(2)}`;
+  }
+
+  // Habilitar el botón de envío solo si se selecciona un plan
+  function checkFormValidity() {
+    let isPlanSelected = Array.from(planRadios).some(radio => radio.checked);
+    submitButton.disabled = !isPlanSelected;
+  }
+
+  // Escuchar cambios en los planes y servicios
+  planRadios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      calculateTotal();
+      checkFormValidity();
+    });
+  });
+
+  serviceCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener("change", calculateTotal);
+  });
+});
+
+
+/*Javascript del contador*/
+// Función para abreviar números grandes
+function formatNumber(num) {
+  if (num >= 1000 && num < 1000000) {
+    return (num / 1000).toFixed(1) + 'K'; // 1.5K, 2.5K, etc.
+  } else if (num >= 1000000) {
+    return (num / 1000000).toFixed(1) + 'M'; // 1.5M, 2.5M, etc.
+  } else {
+    return num;
+  }
+}
+
+// Función para animar el contador
+function animateCounter(counter) {
+  const target = +counter.getAttribute('data-target');
+  let count = 0;
+  
+  const updateCounter = () => {
+    const increment = target / 200; // Ajusta la velocidad
+    if (count < target) {
+      count += increment;
+      counter.innerText = formatNumber(Math.ceil(count));
+      setTimeout(updateCounter, 20);
+    } else {
+      counter.innerText = formatNumber(target); // Asegura el valor final
+    }
+  };
+  
+  updateCounter();
+}
+
+// Configurar el IntersectionObserver para iniciar los contadores cuando son visibles
+const counters = document.querySelectorAll('.counter');
+const observerOptions = {
+  threshold: 0.5 // Inicia la animación cuando el 50% del elemento es visible
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target); // Inicia el contador
+      observer.unobserve(entry.target); // Deja de observar para evitar reiniciar el contador
+    }
+  });
+}, observerOptions);
+
+// Añadir cada contador al observer
+counters.forEach(counter => {
+  observer.observe(counter);
+});
+
+  </script>  
+</body>
+
+</html>
