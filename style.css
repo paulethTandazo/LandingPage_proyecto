@@ -285,15 +285,21 @@ h1,
   }
 }
 /*Estilos para los servicios*/
-#services h2, #services p {
-  color: white;
+/*Estilo para la sección de servicios adicionales */
+#services {
+  background-color: #ffffff; 
+}
+#services h2 {
+  color:#e66a6a;
+}
+#services p {
+  color: rgb(245, 107, 107);
 }
 #seguro-text, #transporte-text, #fotografia-text, #traductor-text {
   color: black !important;
 }
 
-
-/*Estilos para los card cointer*/
+Estilos para los card cointer*/
 
 #new-arrival .title {
   font-size: 24px;
@@ -499,10 +505,6 @@ footer .btn-outline-danger:hover {
   100% { background-position: 0% 50%; }
 }
 
-/*Estilos para los servicios extras*/
-#services {
-  background-color: #e45252; 
-}
 
 
 #billboard h1 span{
