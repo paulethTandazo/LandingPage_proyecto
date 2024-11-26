@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Domenica Moran",
+      "image": "images/DomenicaFoto.png",
+      "rating": 5,
+      "testimonial": "I had an amazing experience! The service was fantastic, and I can't wait to book my next trip."
+    },
+    {
+      "name": "Nadia Cárdenas",
+      "image": "images/NadiaFoto.png",
+      "rating": 5,
+      "testimonial": "The entire journey was seamless and enjoyable. Highly recommend this service!"
+    },
+    {
+      "name": "Melanie Briones",
+      "image": "images/melanieFptp.png",
+      "rating": 5,
+      "testimonial": "Incredible service, friendly staff, and great value for money. I'll definitely be back!"
+    },
+    {
+      "name": "Lourdes Chalen",
+      "image": "images/LourdesFoto.png",
+      "rating": 5,
+      "testimonial": "Incredible service, friendly staff, and great value for money. I'll definitely be back!"
+    },
+    {
+      "name": "Daniela Basilio",
+      "image": "images/DanielaFoto.png",
+      "rating": 5,
+      "testimonial": "Everything was perfectly organized, making the trip stress-free and enjoyable!"
+    }
+  ]
+  

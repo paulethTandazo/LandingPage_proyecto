@@ -224,19 +224,16 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#billboard">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="#new-arrival">Shop</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pages</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -449,7 +446,6 @@
     <div class="container">
       <h3 class="text-center mb-4">Our Services</h3>
       <p class="text-center mb-5">Explore what we offer to make your trip to Japan unforgettable!</p>
-
       <div class="row">
         <!-- Viaje Seguro -->
         <div class="col-md-6 mb-4">
@@ -505,125 +501,78 @@
       </div>
     </div>
     <div class="container">
-      <h5 class="text-center mb-5" style="color: #e57373"> Check our comments and feel comfortable 😉</h5>
+      <h5 class="text-center mb-5" style="color: #e57373">Check our comments and feel comfortable 😉</h5>
       <div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-
-          <!-- Testimonio 1 -->
-          <div class="carousel-item active">
-            <div class="testimonial-card mx-auto p-4">
-              <div class="d-flex align-items-center mb-3">
-                <img src="images/DomenicaFoto.png" alt="Client 1" class="client-img rounded-circle me-3">
-                <div>
-                  <h5 class="mb-0">Domenica Moran</h5>
-                  <div class="stars">
-                    ★★★★★
-                  </div>
-                </div>
-              </div>
-              <p class="testimonial-text">"I had an amazing experience! The service was fantastic, and I can't wait to
-                book my next trip."</p>
-            </div>
-          </div>
-
-
-          <!-- Testimonio 2 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto p-4">
-              <div class="d-flex align-items-center mb-3">
-                <img src="images/NadiaFoto.png" alt="Client 2" class="client-img rounded-circle me-3">
-                <div>
-                  <h5 class="mb-0">Nadia Cárdenas</h5>
-                  <div class="stars">
-                    ★★★★★
-                  </div>
-                </div>
-              </div>
-              <p class="testimonial-text">"The entire journey was seamless and enjoyable. Highly recommend this
-                service!"</p>
-            </div>
-          </div>
-
-          <!-- Testimonio 3 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto p-4">
-              <div class="d-flex align-items-center mb-3">
-                <img src="images/melanieFptp.png" alt="Client 3" class="client-img rounded-circle me-3">
-                <div>
-                  <h5 class="mb-0">Melanie Briones</h5>
-                  <div class="stars">
-                    ★★★★★
-                  </div>
-                </div>
-              </div>
-              <p class="testimonial-text">"Incredible service, friendly staff, and great value for money. I'll
-                definitely be back!"</p>
-            </div>
-          </div>
-
-          <!-- Testimonio 4 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto p-4">
-              <div class="d-flex align-items-center mb-3">
-                <img src="images/LourdesFoto.png" alt="Client 3" class="client-img rounded-circle me-3">
-                <div>
-                  <h5 class="mb-0">Lourdes Chalen</h5>
-                  <div class="stars">
-                    ★★★★★
-                  </div>
-                </div>
-              </div>
-              <p class="testimonial-text">"Incredible service, friendly staff, and great value for money. I'll
-                definitely be back!"</p>
-            </div>
-          </div>
-          <!-- Testimonio 5 -->
-          <div class="carousel-item">
-            <div class="testimonial-card mx-auto p-4">
-              <div class="d-flex align-items-center mb-3">
-                <img src="images/DanielaFoto.png" alt="Client 2" class="client-img rounded-circle me-3">
-                <div>
-                  <h5 class="mb-0">Daniela Basilio</h5>
-                  <div class="stars">
-                    ★★★★★
-                  </div>
-                </div>
-              </div>
-              <p class="testimonial-text">"Everything was perfectly organized, making the trip stress-free and
-                enjoyable. I highly recommend their services!"</p>
-            </div>
-          </div>
-
-          <!-- Controles del carrusel -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div id="testimonial-carousel" class="carousel-inner">
+          <!-- Los comentarios serán generados dinámicamente aquí -->
         </div>
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+    </div>
   </section>
+  <script>
+// URL del archivo JSON en Firebase
+const firebaseURL = "https://meowjapan-6937c-default-rtdb.firebaseio.com/Collections.json";
+  
+async function fetchTestimonials() {
+    try {
+      // Realiza el fetch al archivo JSON
+      const response = await fetch(firebaseURL);
+      if (!response.ok) throw new Error("Error al obtener los datos");
+      const data = await response.json();
+  
+      // Genera el contenido del carrusel
+      populateCarousel(data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+  
+  // Función para llenar el carrusel
+  function populateCarousel(testimonials) {
+    const carouselContainer = document.querySelector("#testimonial-carousel"); // Selecciona el contenedor del carrusel
+    carouselContainer.innerHTML = ""; // Limpia el contenido existente
+  
+    testimonials.forEach((testimonial, index) => {
+      // Crear elementos HTML para el testimonio
+      const isActive = index === 0 ? "active" : ""; // El primer testimonio debe estar activo
+      const carouselItem = document.createElement("div");
+      carouselItem.className = `carousel-item ${isActive}`;
+  
+      carouselItem.innerHTML = `
+        <div class="testimonial-card mx-auto p-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="${testimonial.image}" alt="${testimonial.name}" class="client-img rounded-circle me-3">
+            <div>
+              <h5 class="mb-0">${testimonial.name}</h5>
+              <div class="stars">
+                ${"★".repeat(testimonial.rating)}${"☆".repeat(5 - testimonial.rating)} <!-- Rellena estrellas dinámicamente -->
+              </div>
+            </div>
+          </div>
+          <p class="testimonial-text">${testimonial.testimonial}</p>
+        </div>
+      `;
+  
+      // Agrega el elemento al contenedor del carrusel
+      carouselContainer.appendChild(carouselItem);
+    });
+  }
+  
+  // Llama a la función para obtener y renderizar los testimonios
+  fetchTestimonials();
+    
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
-    // configuración del firebase
-    const firebaseConfig = {
-      apiKey: "AIzaSyDvG6IHv9XONDLPZ7J99OY-QwaUW6lq7mI",
-      authDomain: "meowjapan-6937c.firebaseapp.com",
-      projectId: "meowjapan-6937c",
-      storageBucket: "meowjapan-6937c.firebasestorage.app",
-      messagingSenderId: "248793722629",
-      appId: "1:248793722629:web:6542055e2da528236ad16c",
-      measurementId: "G-KJV1K56B9P"
-    };
-    //Inicialización del firebase y firestore
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-  </script>
   <section id="contact" class="py-5" style="background-color: white;">
     <div class="container">
       <h2 class="text-center mb-4">Contact With Team</h2>
