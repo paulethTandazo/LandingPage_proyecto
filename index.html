@@ -577,50 +577,119 @@
   <br>
   <br>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <section id="questions-section" class="py-5" style="background: linear-gradient(to right, #e14a4a, white);">
+  <section id="questions-section" class="py-5" style="background: linear-gradient(to right, #ff5454, #ff5454);">
     <div class="container">
-      <div class="row">
-        <!-- Lado izquierdo -->
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-          <div class="d-flex align-items-start" style="gap: 20px;">
-            <img src="images/Super Mario Bros_ Characters Who Deserve Their Own Game.png" alt="Publica tus dudas" class="img-fluid"
-              style="max-width: 400px; border-radius: 10px;">
+          <!-- Imagen principal -->
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <img src="images/Super Mario Bros_ Characters Who Deserve Their Own Game.png" alt="Main Image" class="img-fluid" style="max-width: 20%; height: auto;">
+      </div>
+    </div>
+      <!-- Título principal -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <style>
+            .slide-in-text {
+              transform: translateX(-100%);
+              animation: slideIn 2s ease-in-out forwards;
+            }
+          
+            @keyframes slideIn {
+              to {
+                transform: translateX(0);
+              }
+            }
+          </style>
+          
+          <h2 class="slide-in-text" style="color: white; font-size: 2.5rem; font-weight: bold;">We’d love to hear your thoughts!</h2>
+                    <p style="color: #fff8ee; font-size: 1.2rem;">Ask us anything, anytime 🌟</p>
+        </div>
+      </div>
   
-            <div class="text-start" style="color: white;">
-              <h4 class="mb-4 text-center" style="font-weight: bold;">We’d love to hear your thoughts!</h4>
-              <ul class="list-unstyled">
-                <li class="d-flex align-items-center mb-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>🌟 Available 24/7 for your questions</span>
-                </li>
-                <li class="d-flex align-items-center mb-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>❓ Ask us anything, anytime</span>
-                </li>
-                <li class="d-flex align-items-center mb-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>⚡ Fast and reliable answers</span>
-                </li>
-                <li class="d-flex align-items-center mb-3">
-                  <i class="bi bi-check-circle-fill text-success me-2"></i>
-                  <span>🤝 Personalized support just for you</span>
-                </li>
-              </ul>
+      <!-- Tarjetas de preguntas -->
+      <div class="row g-4 mb-5">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0" style="background-color: #ffe5e5;">
+            <div class="card-body d-flex align-items-center">
+              <span style="font-size: 2rem; margin-right: 1rem;">❓</span>
+              <div>
+                <h5 class="card-title" style="font-weight: bold; color: #d9534f;">Have a Question?</h5>
+                <p class="card-text text-muted">We are available 24/7 to help you.</p>
+              </div>
             </div>
           </div>
         </div>
   
-        <!-- Lado derecho -->
-        <div class="col-md-6 d-flex flex-column align-items-center justify-content-center" style="padding: 20px;">
-          <h4 class="mb-4 text-center" style="font-weight: bold;">Recent Comments</h4>
-
-          <div class="row g-3" id="comments" style="width: 100%; max-width: 400px;">
-            <!-- Comentarios se cargarán dinámicamente aquí -->
+        <!-- Tarjeta 2 -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0" style="background-color: #e6f7ff;">
+            <div class="card-body d-flex align-items-center">
+              <span style="font-size: 2rem; margin-right: 1rem;">💬</span>
+              <div>
+                <h5 class="card-title" style="font-weight: bold; color: #0275d8;">Need Quick Answers?</h5>
+                <p class="card-text text-muted">Our team is always ready to assist you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Tarjeta 3 -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0" style="background-color: #e8ffe8;">
+            <div class="card-body d-flex align-items-center">
+              <span style="font-size: 2rem; margin-right: 1rem;">✨</span>
+              <div>
+                <h5 class="card-title" style="font-weight: bold; color: #5cb85c;">Looking for Solutions?</h5>
+                <p class="card-text text-muted">Get personalized support just for you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Tarjeta 4 -->
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0" style="background-color: #fff5cc;">
+            <div class="card-body d-flex align-items-center">
+              <span style="font-size: 2rem; margin-right: 1rem;">🚀</span>
+              <div>
+                <h5 class="card-title" style="font-weight: bold; color: #f0ad4e;">Ready to Get Started?</h5>
+                <p class="card-text text-muted">We ensure fast and reliable service.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Carrusel de comentarios -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 style="color: rgb(255, 254, 254); font-weight: bold; font-size: 2rem;">What People Are Saying</h3>
+          <p style="color: #ffffff; font-size: 1.2rem;">Read feedback from our amazing users 🌟</p>
+        </div>
+  
+        <div class="col-md-8 offset-md-2">
+          <div id="commentsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner" id="carousel-comments-container">
+              <!-- Comentarios se cargarán dinámicamente aquí -->
+            </div>
+  
+            <!-- Controles de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#commentsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#commentsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
   
   <script>
     // URL de Firebase Realtime Database
@@ -632,51 +701,59 @@
         const response = await fetch(firebaseUrl1);
         const data = await response.json();
   
-        // Contenedor de comentarios
-        const commentsContainer = document.getElementById("comments");
+        // Contenedor del carrusel
+        const carouselContainer = document.getElementById("carousel-comments-container");
   
-        // Limpiar contenedor
-        commentsContainer.innerHTML = "";
+        // Limpiar el contenedor
+        carouselContainer.innerHTML = "";
   
         // Verificar si hay datos
         if (data) {
+          let isActive = true;
           Object.values(data).forEach((comment) => {
-            const commentCard = document.createElement("div");
-            commentCard.classList.add("col-12");
+            const commentItem = document.createElement("div");
+            commentItem.classList.add("carousel-item");
+            if (isActive) {
+              commentItem.classList.add("active");
+              isActive = false;
+            }
   
             // Plantilla de cada comentario
-            commentCard.innerHTML = `
-              <div class="card shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">${comment.subject}</h5>
+            commentItem.innerHTML = `
+              <div class="card shadow-lg border-0">
+                <div class="card-body text-center" style="padding: 2rem;">
+                  <h5 class="card-title" style="font-weight: bold; color: #ff7e5f;">${comment.subject}</h5>
                   <p class="card-text text-muted">${comment.message}</p>
                 </div>
               </div>
             `;
   
-            commentsContainer.appendChild(commentCard);
+            carouselContainer.appendChild(commentItem);
           });
         } else {
-          const noComments = document.createElement("div");
-          noComments.classList.add("col-12");
-          noComments.innerHTML = `
-            <div class="card shadow-sm">
-              <div class="card-body text-center">
-                <p class="text-muted">No comments yet.</p>
+          const noCommentsItem = document.createElement("div");
+          noCommentsItem.classList.add("carousel-item", "active");
+          noCommentsItem.innerHTML = `
+            <div class="card shadow-lg border-0">
+              <div class="card-body text-center" style="padding: 2rem;">
+                <p class="text-muted">No comments yet. Be the first to share your feedback!</p>
               </div>
             </div>
           `;
-          commentsContainer.appendChild(noComments);
+          carouselContainer.appendChild(noCommentsItem);
         }
       } catch (error) {
-        console.error("Error al obtener comentarios:", error);
-        document.getElementById("comments").innerHTML = `
-          <div class="card shadow-sm">
-            <div class="card-body text-danger text-center">
-              <p>Error al cargar comentarios.</p>
+        console.error("Error fetching comments:", error);
+        const errorItem = document.createElement("div");
+        errorItem.classList.add("carousel-item", "active");
+        errorItem.innerHTML = `
+          <div class="card shadow-lg border-0">
+            <div class="card-body text-center text-danger" style="padding: 2rem;">
+              <p>Error loading comments. Please try again later.</p>
             </div>
           </div>
         `;
+        carouselContainer.appendChild(errorItem);
       }
     }
   
@@ -684,16 +761,17 @@
     fetchComments();
   </script>
   
+  
 
   <section id="contact" class="py-5" style="background-color: white;">
     <div class="container">
       <h2 class="text-center mb-4">Contact With Team</h2>
-      <p class="text-center mb-5">We'd love to hear from you! Fill out the form below to get in touch.</p>
+      <p class="text-center mb-5">Don’t forget to leave us your comments and/or questions, which will be published in our section below.      </p>
 
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <!-- Formulario con ID para manejo de eventos -->
-          <form id="contactForm" class="p-4 rounded shadow" style="background-color: #ffd5d5;">
+          <form id="contactForm" class="p-4 rounded shadow" style="background-color: #f8eeee;">
             <div class="row mb-3">
               <div class="col">
                 <label for="name" class="form-label">Your Name</label>
