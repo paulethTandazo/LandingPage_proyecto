@@ -519,35 +519,35 @@
     </div>
   </section>
   <script>
-// URL del archivo JSON en Firebase
-const firebaseURL = "https://meowjapan-6937c-default-rtdb.firebaseio.com/Collections.json";
-  
-async function fetchTestimonials() {
-    try {
-      // Realiza el fetch al archivo JSON
-      const response = await fetch(firebaseURL);
-      if (!response.ok) throw new Error("Error al obtener los datos");
-      const data = await response.json();
-  
-      // Genera el contenido del carrusel
-      populateCarousel(data);
-    } catch (error) {
-      console.error("Error:", error);
+    // URL del archivo JSON en Firebase
+    const firebaseURL = "https://meowjapan-6937c-default-rtdb.firebaseio.com/Collections.json";
+
+    async function fetchTestimonials() {
+      try {
+        // Realiza el fetch al archivo JSON
+        const response = await fetch(firebaseURL);
+        if (!response.ok) throw new Error("Error al obtener los datos");
+        const data = await response.json();
+
+        // Genera el contenido del carrusel
+        populateCarousel(data);
+      } catch (error) {
+        console.error("Error:", error);
+      }
     }
-  }
-  
-  // Función para llenar el carrusel
-  function populateCarousel(testimonials) {
-    const carouselContainer = document.querySelector("#testimonial-carousel"); // Selecciona el contenedor del carrusel
-    carouselContainer.innerHTML = ""; // Limpia el contenido existente
-  
-    testimonials.forEach((testimonial, index) => {
-      // Crear elementos HTML para el testimonio
-      const isActive = index === 0 ? "active" : ""; // El primer testimonio debe estar activo
-      const carouselItem = document.createElement("div");
-      carouselItem.className = `carousel-item ${isActive}`;
-  
-      carouselItem.innerHTML = `
+
+    // Función para llenar el carrusel
+    function populateCarousel(testimonials) {
+      const carouselContainer = document.querySelector("#testimonial-carousel"); // Selecciona el contenedor del carrusel
+      carouselContainer.innerHTML = ""; // Limpia el contenido existente
+
+      testimonials.forEach((testimonial, index) => {
+        // Crear elementos HTML para el testimonio
+        const isActive = index === 0 ? "active" : ""; // El primer testimonio debe estar activo
+        const carouselItem = document.createElement("div");
+        carouselItem.className = `carousel-item ${isActive}`;
+
+        carouselItem.innerHTML = `
         <div class="testimonial-card mx-auto p-4">
           <div class="d-flex align-items-center mb-3">
             <img src="${testimonial.image}" alt="${testimonial.name}" class="client-img rounded-circle me-3">
@@ -561,113 +561,226 @@ async function fetchTestimonials() {
           <p class="testimonial-text">${testimonial.testimonial}</p>
         </div>
       `;
+
+        // Agrega el elemento al contenedor del carrusel
+        carouselContainer.appendChild(carouselItem);
+      });
+    }
+
+    // Llama a la función para obtener y renderizar los testimonios
+    fetchTestimonials();
+
+  </script>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <section id="questions-section" class="py-5" style="background: linear-gradient(to right, #e14a4a, white);">
+    <div class="container">
+      <div class="row">
+        <!-- Lado izquierdo -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <div class="d-flex align-items-start" style="gap: 20px;">
+            <img src="images/Super Mario Bros_ Characters Who Deserve Their Own Game.png" alt="Publica tus dudas" class="img-fluid"
+              style="max-width: 400px; border-radius: 10px;">
   
-      // Agrega el elemento al contenedor del carrusel
-      carouselContainer.appendChild(carouselItem);
-    });
-  }
+            <div class="text-start" style="color: white;">
+              <h4 class="mb-4 text-center" style="font-weight: bold;">We’d love to hear your thoughts!</h4>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <span>🌟 Available 24/7 for your questions</span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <span>❓ Ask us anything, anytime</span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <span>⚡ Fast and reliable answers</span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  <span>🤝 Personalized support just for you</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
   
-  // Llama a la función para obtener y renderizar los testimonios
-  fetchTestimonials();
-    
-</script> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Lado derecho -->
+        <div class="col-md-6 d-flex flex-column align-items-center justify-content-center" style="padding: 20px;">
+          <h4 class="mb-4 text-center" style="font-weight: bold;">Recent Comments</h4>
 
-<section id="contact" class="py-5" style="background-color: white;">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact With Team</h2>
-    <p class="text-center mb-5">We'd love to hear from you! Fill out the form below to get in touch.</p>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <!-- Formulario con ID para manejo de eventos -->
-        <form id="contactForm" class="p-4 rounded shadow" style="background-color: #ffd5d5;">
-          <div class="row mb-3">
-            <div class="col">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="col">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
+          <div class="row g-3" id="comments" style="width: 100%; max-width: 400px;">
+            <!-- Comentarios se cargarán dinámicamente aquí -->
           </div>
-
-          <div class="row mb-3">
-            <div class="col">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-            </div>
-            <div class="col">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
-          </div>
-
-          <div class="text-center">
-            <button type="submit" class="btn text-white px-5" style="background-color: red; border-color: red;">SEND
-              MESSAGE</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<script>
-  // URL de tu base de datos Firebase
-  const firebaseUrl = "https://meowjapan-6937c-default-rtdb.firebaseio.com/Repuestas.json";
-
-  // Obtener el formulario
-  const form = document.getElementById("contactForm");
-
-  // Evento para capturar datos y enviarlos
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault(); // Prevenir que la página se recargue
-
-    // Capturar valores del formulario
-    const subject = document.getElementById("subject").value.trim();
-    const message = document.getElementById("message").value.trim();
-
-    // Validar que los campos no estén vacíos
-    if (!subject || !message) {
-      alert("Por favor, complete el campo de asunto y mensaje.");
-      return;
-    }
-
-    // Crear el objeto que se enviará
-    const newEntry = {
-      subject: subject,
-      message: message,
-    };
-
-    try {
-      // Hacer POST con Fetch
-      const response = await fetch(firebaseUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newEntry),
-      });
-
-      if (response.ok) {
-        alert("¡Pregunta enviada correctamente!");
-        form.reset(); // Limpiar el formulario
-      } else {
-        alert("Error al enviar la pregunta. Inténtalo nuevamente.");
+  </section>
+  
+  <script>
+    // URL de Firebase Realtime Database
+    const firebaseUrl1 = "https://meowjapan-6937c-default-rtdb.firebaseio.com/Repuestas.json";
+  
+    // Función para obtener comentarios desde Firebase
+    async function fetchComments() {
+      try {
+        const response = await fetch(firebaseUrl1);
+        const data = await response.json();
+  
+        // Contenedor de comentarios
+        const commentsContainer = document.getElementById("comments");
+  
+        // Limpiar contenedor
+        commentsContainer.innerHTML = "";
+  
+        // Verificar si hay datos
+        if (data) {
+          Object.values(data).forEach((comment) => {
+            const commentCard = document.createElement("div");
+            commentCard.classList.add("col-12");
+  
+            // Plantilla de cada comentario
+            commentCard.innerHTML = `
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">${comment.subject}</h5>
+                  <p class="card-text text-muted">${comment.message}</p>
+                </div>
+              </div>
+            `;
+  
+            commentsContainer.appendChild(commentCard);
+          });
+        } else {
+          const noComments = document.createElement("div");
+          noComments.classList.add("col-12");
+          noComments.innerHTML = `
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <p class="text-muted">No comments yet.</p>
+              </div>
+            </div>
+          `;
+          commentsContainer.appendChild(noComments);
+        }
+      } catch (error) {
+        console.error("Error al obtener comentarios:", error);
+        document.getElementById("comments").innerHTML = `
+          <div class="card shadow-sm">
+            <div class="card-body text-danger text-center">
+              <p>Error al cargar comentarios.</p>
+            </div>
+          </div>
+        `;
       }
-    } catch (error) {
-      console.error("Error al enviar datos a Firebase:", error);
-      alert("Error al enviar los datos. Intente más tarde.");
     }
-  });
-</script>
+  
+    // Llamar a la función para cargar comentarios
+    fetchComments();
+  </script>
+  
+
+  <section id="contact" class="py-5" style="background-color: white;">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact With Team</h2>
+      <p class="text-center mb-5">We'd love to hear from you! Fill out the form below to get in touch.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <!-- Formulario con ID para manejo de eventos -->
+          <form id="contactForm" class="p-4 rounded shadow" style="background-color: #ffd5d5;">
+            <div class="row mb-3">
+              <div class="col">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="col">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="col">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn text-white px-5" style="background-color: red; border-color: red;">SEND
+                MESSAGE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // URL de tu base de datos Firebase
+    const firebaseUrl = "https://meowjapan-6937c-default-rtdb.firebaseio.com/Repuestas.json";
+
+    // Obtener el formulario
+    const form = document.getElementById("contactForm");
+
+    // Evento para capturar datos y enviarlos
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault(); // Prevenir que la página se recargue
+
+      // Capturar valores del formulario
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      // Validar que los campos no estén vacíos
+      if (!subject || !message) {
+        alert("Por favor, complete el campo de asunto y mensaje.");
+        return;
+      }
+
+      // Crear el objeto que se enviará
+      const newEntry = {
+        subject: subject,
+        message: message,
+      };
+
+      try {
+        // Hacer POST con Fetch
+        const response = await fetch(firebaseUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newEntry),
+        });
+
+        if (response.ok) {
+          alert("¡Pregunta enviada correctamente!");
+          form.reset(); // Limpiar el formulario
+        } else {
+          alert("Error al enviar la pregunta. Inténtalo nuevamente.");
+        }
+      } catch (error) {
+        console.error("Error al enviar datos a Firebase:", error);
+        alert("Error al enviar los datos. Intente más tarde.");
+      }
+    });
+  </script>
+
   <footer class="py-5 bg-white">
     <div class="container">
       <div class="row text-center">
