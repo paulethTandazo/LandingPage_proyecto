@@ -233,6 +233,9 @@
                   <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="#questions-section">Q&A</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
@@ -579,12 +582,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <section id="questions-section" class="py-5" style="background: linear-gradient(to right, #ff5454, #ff5454);">
     <div class="container">
-          <!-- Imagen principal -->
-    <div class="row mb-4">
-      <div class="col-12 text-center">
-        <img src="images/Super Mario Bros_ Characters Who Deserve Their Own Game.png" alt="Main Image" class="img-fluid" style="max-width: 20%; height: auto;">
+      <!-- Imagen principal -->
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <img src="images/Super Mario Bros_ Characters Who Deserve Their Own Game.png" alt="Main Image"
+            class="img-fluid" style="max-width: 20%; height: auto;">
+        </div>
       </div>
-    </div>
       <!-- Título principal -->
       <div class="row mb-5">
         <div class="col-12 text-center">
@@ -593,19 +597,20 @@
               transform: translateX(-100%);
               animation: slideIn 2s ease-in-out forwards;
             }
-          
+
             @keyframes slideIn {
               to {
                 transform: translateX(0);
               }
             }
           </style>
-          
-          <h2 class="slide-in-text" style="color: white; font-size: 2.5rem; font-weight: bold;">We’d love to hear your thoughts!</h2>
-                    <p style="color: #fff8ee; font-size: 1.2rem;">Ask us anything, anytime 🌟</p>
+
+          <h2 class="slide-in-text" style="color: white; font-size: 2.5rem; font-weight: bold;">We’d love to hear your
+            thoughts!</h2>
+          <p style="color: #fff8ee; font-size: 1.2rem;">Ask us anything, anytime 🌟</p>
         </div>
       </div>
-  
+
       <!-- Tarjetas de preguntas -->
       <div class="row g-4 mb-5">
         <!-- Tarjeta 1 -->
@@ -620,7 +625,7 @@
             </div>
           </div>
         </div>
-  
+
         <!-- Tarjeta 2 -->
         <div class="col-md-6">
           <div class="card shadow-lg border-0" style="background-color: #e6f7ff;">
@@ -633,7 +638,7 @@
             </div>
           </div>
         </div>
-  
+
         <!-- Tarjeta 3 -->
         <div class="col-md-6">
           <div class="card shadow-lg border-0" style="background-color: #e8ffe8;">
@@ -646,7 +651,7 @@
             </div>
           </div>
         </div>
-  
+
         <!-- Tarjeta 4 -->
         <div class="col-md-6">
           <div class="card shadow-lg border-0" style="background-color: #fff5cc;">
@@ -660,21 +665,21 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Carrusel de comentarios -->
       <div class="row">
         <div class="col-12 text-center">
           <h3 style="color: rgb(255, 254, 254); font-weight: bold; font-size: 2rem;">What People Are Saying</h3>
           <p style="color: #ffffff; font-size: 1.2rem;">Read feedback from our amazing users 🌟</p>
         </div>
-  
+
         <div class="col-md-8 offset-md-2">
           <div id="commentsCarousel" class="carousel slide" data-bs-ride="carousel">
             <!-- Contenido del carrusel -->
             <div class="carousel-inner" id="carousel-comments-container">
               <!-- Comentarios se cargarán dinámicamente aquí -->
             </div>
-  
+
             <!-- Controles de navegación -->
             <button class="carousel-control-prev" type="button" data-bs-target="#commentsCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -689,24 +694,24 @@
       </div>
     </div>
   </section>
-  
-  
+
+
   <script>
     // URL de Firebase Realtime Database
     const firebaseUrl1 = "https://meowjapan-6937c-default-rtdb.firebaseio.com/Repuestas.json";
-  
+
     // Función para obtener comentarios desde Firebase
     async function fetchComments() {
       try {
         const response = await fetch(firebaseUrl1);
         const data = await response.json();
-  
+
         // Contenedor del carrusel
         const carouselContainer = document.getElementById("carousel-comments-container");
-  
+
         // Limpiar el contenedor
         carouselContainer.innerHTML = "";
-  
+
         // Verificar si hay datos
         if (data) {
           let isActive = true;
@@ -717,7 +722,7 @@
               commentItem.classList.add("active");
               isActive = false;
             }
-  
+
             // Plantilla de cada comentario
             commentItem.innerHTML = `
               <div class="card shadow-lg border-0">
@@ -727,7 +732,7 @@
                 </div>
               </div>
             `;
-  
+
             carouselContainer.appendChild(commentItem);
           });
         } else {
@@ -756,17 +761,18 @@
         carouselContainer.appendChild(errorItem);
       }
     }
-  
+
     // Llamar a la función para cargar comentarios
     fetchComments();
   </script>
-  
-  
+
+
 
   <section id="contact" class="py-5" style="background-color: white;">
     <div class="container">
       <h2 class="text-center mb-4">Contact With Team</h2>
-      <p class="text-center mb-5">Don’t forget to leave us your comments and/or questions, which will be published in our section below.      </p>
+      <p class="text-center mb-5">Don’t forget to leave us your comments and/or questions, which will be published in
+        our section below. </p>
 
       <div class="row justify-content-center">
         <div class="col-lg-6">
@@ -793,7 +799,20 @@
                 <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
               </div>
             </div>
-
+            <!-- Select Dropdown for Category -->
+            <div class="row mb-3">
+              <div class="col">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" id="category">
+                  <option selected disabled>Choose a category</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="booking">Booking Assistance</option>
+                  <option value="pricing">Pricing & Offers</option>
+                  <option value="support">Customer Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea class="form-control" id="message" rows="5" placeholder="Write your message here"></textarea>
